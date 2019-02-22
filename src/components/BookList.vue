@@ -2,9 +2,7 @@
   <div>
     <h1>{{title}}</h1>
     <ul>
-<book-item v-for="book in books" :book='book'></book-item>
-    
-
+      <book-item v-for="book in books" :book='book'></book-item>
     </ul>
   </div>
 </template>
@@ -19,22 +17,19 @@ export default {
   },
   data() {
     return {
-      title: "All Books",
+      title: 'All Books',
       books: [
         {
-
-          title: "Self-Reliance",
-          author: "Ralph Waldo Emerson"
+          title: 'Self-Reliance',
+          author: 'Ralph Waldo Emerson'
         },
         {
-
-          title: "American Gods",
-          author: "Neil Gaiman"
+          title: 'American Gods',
+          author: 'Neil Gaiman'
         },
         {
-
-          title: "Amusing Ourselves to Death",
-          author: "Neil Postman"
+          title: 'Amusing Ourselves to Death',
+          author: 'Neil Postman'
         }
       ]
     };
@@ -53,5 +48,4 @@ ul {
   padding: 0;
   color: blue;
 }
-
 </style>
