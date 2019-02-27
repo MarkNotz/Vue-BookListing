@@ -1,11 +1,11 @@
+--BookList.vue
+
 <template>
   <div>
     <h1>{{title}}</h1>
-    <div>
     <ul>
       <book-item v-for="book in books" :book='book'></book-item>
     </ul>
-    </div>
     <hr>
     <book-form @addBook='appendBook'></book-form>
   </div>
@@ -56,11 +56,7 @@ h2 {
 
 ul {
   list-style-type: none;
-  align-content: left;
+  padding: 0;
   color: blue;
-}
-
-hr {
-border-style: dashed;
 }
 </style>

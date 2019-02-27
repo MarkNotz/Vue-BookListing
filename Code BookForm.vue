@@ -1,9 +1,9 @@
+--BookForm.vue
+
 <template>
   <form v-on:submit.prevent="bookSubmit(bookTitle, bookAuthor)" class="" action="#" method="post">
-    <input v-model="bookTitle" type="text" name="title" value="" placeholder="Book Title"><br>
-    <br>
-    <input v-model="bookAuthor" type="text" name="author" value="" placeholder="Book Author"><br>
-    <br>
+    <input v-model="bookTitle" type="text" name="title" value="" placeholder="Book Title">
+    <input v-model="bookAuthor" type="text" name="author" value="" placeholder="Book Author">
     <button type="submit" name="button">Add Book</button>
   </form>
 </template>
@@ -27,14 +27,8 @@ export default {
 </script>
 
 <style>
-input {
-    border-color: green;
-    font-style: italic;
-}
 
-form {
-    padding-top: 1em;
-}
 </style>
 
 
+--BookList.vue
